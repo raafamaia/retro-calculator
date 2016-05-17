@@ -36,7 +36,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uKS-Z5-huU">
-                                <rect key="frame" x="180" y="72" width="241" height="442"/>
+                                <rect key="frame" x="180" y="72" width="241" height="516"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="M6K-tz-ylm">
                                         <rect key="frame" x="0.0" y="0.0" width="241" height="71"/>
@@ -52,6 +52,16 @@
                                             <constraint firstAttribute="width" constant="257" id="5GK-7F-TQd"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqh-DM-VIP" userLabel="clear">
+                                        <rect key="frame" x="0.0" y="442" width="241" height="74"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="74" id="nkL-LZ-0Yc"/>
+                                        </constraints>
+                                        <state key="normal" image="clear"/>
+                                        <connections>
+                                            <action selector="onClearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mYj-u2-bK5"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RAe-ms-lco">
@@ -271,7 +281,7 @@
                             <constraint firstItem="jwo-4R-8T1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PTg-Op-MIt"/>
                             <constraint firstItem="RAe-ms-lco" firstAttribute="centerX" secondItem="uKS-Z5-huU" secondAttribute="centerX" id="Tx0-nW-T8t"/>
                             <constraint firstItem="Q9u-Rk-PKp" firstAttribute="top" secondItem="uKS-Z5-huU" secondAttribute="top" constant="18" id="WSL-Df-Cc5"/>
-                            <constraint firstItem="RAe-ms-lco" firstAttribute="centerY" secondItem="uKS-Z5-huU" secondAttribute="centerY" constant="35" id="X3H-os-byc"/>
+                            <constraint firstItem="uKS-Z5-huU" firstAttribute="centerY" secondItem="RAe-ms-lco" secondAttribute="centerY" constant="3" id="X3H-os-byc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wFf-fH-VDA" secondAttribute="bottom" id="YFW-Ue-2si"/>
                             <constraint firstItem="uKS-Z5-huU" firstAttribute="trailing" secondItem="Q9u-Rk-PKp" secondAttribute="trailing" constant="10" id="Zje-ss-GXG"/>
                             <constraint firstItem="uKS-Z5-huU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="baF-ts-osU"/>
@@ -309,6 +319,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
